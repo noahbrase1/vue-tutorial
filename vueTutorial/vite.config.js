@@ -6,6 +6,7 @@ import vueDevTools from 'vite-plugin-vue-devtools'
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: '/',  // <-- Add this line for correct assets path on deployment
   plugins: [
     vue(),
     vueDevTools(),
